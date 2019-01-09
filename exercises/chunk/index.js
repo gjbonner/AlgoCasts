@@ -12,6 +12,7 @@ function chunk(array, size) {
   const chunked = []
   for(element of array){
     const last = chunked[chunked.length -1]
+    console.log(last)
     if(!last || last.length === size){
       chunked.push([element])
     } else {
